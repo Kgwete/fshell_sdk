@@ -5,7 +5,7 @@
 FShell is a proprietory software developed by Florenet, (Sephaku. Groblersdal. Limpopo Province, South Africa) from 
 March 2012 initially only used for private use and never released to the public until now. It was spun off from netserv, a networking and collaboration tool that led to development of a custom commands processor that is now fshell. 
 FShell SDK provides a professional, feature-rich custom commands processor that you can embed into any C/C++ application. 
-It is designed to sit right inside the application, specifically long running applications such as admin tools that demands stability and custom built in commands. fshell should not be thought of as OS shell as it stays in different ecosystem and serves different purpose from Bash, zsh, fish.etc
+It is designed to sit right inside the application, specifically it is intended for long-running processes that require a persistent, extensible command interface at runtime. fshell should not be thought of as OS shell as it stays in different ecosystem and serves different purpose from Bash, zsh, fish.etc
 
 ---
 
