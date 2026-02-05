@@ -1,11 +1,11 @@
 # FShell SDK
 
-**The embeddable command shell library for modern applications**
+**The embeddable runtime command library for modern applications**
 
 FShell is a proprietory software developed by Florenet, (Sephaku. Groblersdal. Limpopo Province, South Africa) from 
-March 2012 initially only used for private use and never released to the public until now. 
-FShell SDK provides a professional, feature-rich command shell that you can embed into any C/C++ application. 
-Stop reinventing command interfaces – use FShell and focus on your application logic.
+March 2012 initially only used for private use and never released to the public until now. It was spun off from netserv, a networking and collaboration tool that led to development of a custom commands processor that is now fshell. 
+FShell SDK provides a professional, feature-rich custom commands processor that you can embed into any C/C++ application. 
+It is designed to sit right inside the application, specifically long running applications such as admin tools that demands stability and custom built in commands. fshell should not be thought of as OS shell as it stays in different ecosystem and serves different purpose from Bash, zsh, fish.etc
 
 ---
 
@@ -51,10 +51,9 @@ gcc main.c -I fshell_sdk/include -L fshell_sdk/lib -lfnshell_r -lws2_32 -o myapp
 
 ### Core Features
 - ✅ **On Windows** - It is recommended you use PowerShell over CMD to enjoy fshell.
-- ✅ **Interactive Mode** - Full-featured command shell with history and auto-completion
 - ✅ **Event system** - fshell uses its own low level events system to detect and process mouse and keyboard signals
 - ✅ **Daemon Mode** - Background service with IPC for remote control
-- ✅ **Multi-Session** - Designed out of the box to handle multiple users simultaneously
+- ✅ **Multi-Session** - Designed out of the box to handle multiple users simultaneously. 
 - ✅ **Plugin Architecture** - Extend with loadable plugins
 - ✅ **Clean C API** - Works with C, C++, Python, Rust, Go, Java, .NET, and more
 - ✅ **Cross-Platform** - Windows and Linux (macOS coming soon)
@@ -62,7 +61,7 @@ gcc main.c -I fshell_sdk/include -L fshell_sdk/lib -lfnshell_r -lws2_32 -o myapp
 ### User Interface
 - 📦 Beautiful box-drawn layouts
 - 🎨 ANSI color support
-- 🔄 Command history with arrow keys
+- 🔄 Command history
 - ⌨️ Tab or right arrow completion for commands
 - 🖱️ Mouse scroll support (UI mode)
 - 📜 Scrollable output buffer
@@ -71,10 +70,8 @@ gcc main.c -I fshell_sdk/include -L fshell_sdk/lib -lfnshell_r -lws2_32 -o myapp
 - `help` / `fhelp` - List all available commands
 - `version` / `info` - Display version and system information
 - `clear` / `cls` - Clear screen
-- `exit` / `quit` - Exit the shell
+- `exit` / `quit` - Exit
 - `history` - Show command history
-- `calc` - Simple calculator
-- `timer` - Countdown timer utility
 
 ---
 
